@@ -27,35 +27,25 @@ Once the token has been verified you will place it on a blockchain market place 
 
 ## Install
 
-To install, download or clone the dependecies, run:
+1.  To install, download or clone the dependecies, run:
+   `npm install`
 
-`npm install`
+2. In separate window start Ganache in the terminal with 50 account addresses of 100 Ether each.
+   `ganache-cli -m "<Enter the Metamask Seed>" -a 50`
 
-1. In separate window start Ganache in the terminal with 50 account addresses of 100 Ether each.
+3. In the directory eth-contracts/ compile smart contracts with truffle:
+   `truffle compile`
+   This will create the smart contract artifacts in folder build/contracts.
 
-`ganache-cli -m "<Enter the Metamask Seed>" -a 50`
-
-2. In the directory eth-contracts/ compile smart contracts with truffle:
-
-    `truffle compile`
-
-    This will create the smart contract artifacts in folder build/contracts.
-
-3. Then compile and deploy with truffle on the local/public network.
-
-- Rinkeby Public network
-
-`truffle migrate --network development --reset --compile-all`
-
-- Localhost network
-
-`truffle migrate --network development --reset --compile-all`
-
-  - Network Ports
-      - 7545 for ganache-GUI
-      - 8545 for ganache-cli
-      - 9545 for truffle-test
-
+4. Then compile and deploy with truffle on the local/public network.
+   - Rinkeby Public network
+        `truffle migrate --network development --reset --compile-all`
+   - Localhost network
+        `truffle migrate --network development --reset --compile-all`
+        - Network Ports
+                  - 7545 for ganache-GUI
+                  - 8545 for ganache-cli
+                  - 9545 for truffle-test
 ## Testing
   To run truffle tests from inside the directory eth-contracts/:
 

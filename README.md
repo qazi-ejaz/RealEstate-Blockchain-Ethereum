@@ -51,9 +51,10 @@ Once the token has been verified you will place it on a blockchain market place 
         `truffle migrate --network development --reset --compile-all`
 
         - Network Ports
-                  - 7545 for ganache-GUI
-                  - 8545 for ganache-cli
-                  - 9545 for truffle-test
+          - 7545 for ganache-GUI
+          - 8545 for ganache-cli
+          - 9545 for truffle-test
+
 ## Testing
 To run truffle tests from inside the directory eth-contracts/:
 

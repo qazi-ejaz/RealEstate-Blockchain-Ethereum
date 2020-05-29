@@ -2,7 +2,7 @@
 
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product.
 
-## Welcome!
+## Motivation!
 This project create a decentralized house listing service.
 
 At present, property titles are often paper-based, creating opportunities for errors and fraud. Title professionals find defects in 25% of all titles during the transaction process, according to the American Land Title Association.

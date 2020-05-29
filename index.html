@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenise Your Property</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src= "./src/js/app.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Tokenise Your Property</h1>
+        <hr>
+        <p style="text-align: center;">Tokenise your property using proofs.</p>
+    </div>
+
+    <div id="ftc-property">
+        <h2>Product Overview</h2>
+        <div class="form-group">
+            PropertyId
+            <br>
+            <input class="input-field" type="number" id="propertyid" name="property" value=1><br>
+           
+            <div class=button-div>
+                <button class="btn-fetchOne" id="button" type="button" data-id="2">Mint Property</button>
+                
+            </div>
+        </div>
+       
+       
+        
+        <hr>
+    </div>
+
+    <h2>Transaction History<span id="ftc-history"></span></h2>
+    <div>
+        <ul id="ftc-events">
+            <!-- Events will appear here from app.js -->
+        </ul>
+        <br>
+        <hr>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/web3.min.js"></script> -->
+    <script src="./eth-contracts/src/js/truffle-contract.js"></script>
+    <script src="./eth-contracts/src/js/app.js"></script>
+</body>
+
+</html>

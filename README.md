@@ -29,7 +29,7 @@ Once the token has been verified you will place it on a blockchain market place 
 
 1.  To install, download or clone the dependecies, run:
 
-   `npm install`
+    `npm install`
 
 2. In separate window start Ganache in the terminal with 50 account addresses of 100 Ether each.
 
@@ -44,9 +44,9 @@ Once the token has been verified you will place it on a blockchain market place 
 4. Then compile and deploy with truffle on the local/public network.
    - Rinkeby Public network
 
-        `truffle migrate --network development --reset --compile-all`
+        `truffle migrate --network rinkeby`
 
-   - Localhost network
+   - localhost network
 
         `truffle migrate --network development --reset --compile-all`
 
@@ -56,7 +56,45 @@ Once the token has been verified you will place it on a blockchain market place 
                   - 9545 for truffle-test
 ## Testing
 To run truffle tests from inside the directory eth-contracts/:
+
 `truffle test`
+
+## Create ZK-Snarks Proof using [Zokrates](https://github.com/Zokrates/ZoKrates)
+Succinct Zero-Knowledge proofs (zkSnarks) are proving to be one of the most promising frameworks for enhancing privacy and scalability in the blockchain space.
+
+Projects like Zcash are using zkSnarks to make payments anonymous (rather than pseudonymous). Other projects such as Coda are experimenting with trustless light clients by using recursive zkSnarks to dramatically reduce the number of state verifications blockchain clients have to perform when coming online. Ethereum founder, [Vitalik Buterin wrote how zkSnarks can be used to scale transaction speed on Ethereum](https://ethresear.ch/t/on-chain-scaling-to-potentially-500-tx-sec-through-mass-tx-validation/3477)
+
+### Setting up ZoKrates
+Follow the below commands step by step for generating verification.sol and proof.json files which will be needed to verify the contract without exposing the actual information.
+
+1.  `Install [Docker](https://docs.docker.com/get-docker/)``
+2. `docker run -v /path/to/zokrates/zokrates/code:/home/zokrates/code -ti zokrates/zokrates /bin/bash`
+3.  `cd code/square`
+4.  `~/zokrates compile -i square.code`
+5.  `~/zokrates setup`
+6.  `~/zokrates compute-witness -a 3 9`
+7.  `~/zokrates generate-proof`
+8.  `~/zokrates export-verifier`
+
+## Minting a Token
+In a separate terminal window, launch the DApp:
+
+npm run dev
+
+To view dapp
+
+`http://localhost:3000`
+
+## Marketplace
+Front end is created in OpenSea marketplace to sell or purchase the tokens
+https://rinkeby.opensea.io/get-listed/step-two
+
+# Project Notes and Links
+contract address(SolnSquareVerifier):    
+
+contract address(SquareVerifier):       
+
+The contract ABIs are located in the corresponding .json files under the folder build/contracts
 
 # Project Resources
 

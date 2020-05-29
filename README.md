@@ -68,7 +68,7 @@ Projects like Zcash are using zkSnarks to make payments anonymous (rather than p
 ### Setting up ZoKrates
 Follow the below commands step by step for generating verification.sol and proof.json files which will be needed to verify the contract without exposing the actual information.
 
-1.  `Install [Docker](https://docs.docker.com/get-docker/)``
+1.  Install [Docker](https://docs.docker.com/get-docker/)
 2. `docker run -v /path/to/zokrates/zokrates/code:/home/zokrates/code -ti zokrates/zokrates /bin/bash`
 3.  `cd code/square`
 4.  `~/zokrates compile -i square.code`
@@ -90,10 +90,13 @@ To view dapp
 Front end is created in OpenSea marketplace to sell or purchase the tokens
 https://rinkeby.opensea.io/get-listed/step-two
 
-# Project Notes and Links
-contract address(SolnSquareVerifier):    
+My market place
+[OpenSea Store Front](https://rinkeby.opensea.io/assets/real-estate-market)
 
-contract address(SquareVerifier):       
+# Project Notes and Links
+contract address(SolnSquareVerifier): [0x8e8d7e2b13dca0728ae99fe0d05a3b98676af2c281a04fc6f760f3136647a593](https://rinkeby.etherscan.io/tx/0x8e8d7e2b13dca0728ae99fe0d05a3b98676af2c281a04fc6f760f3136647a593)
+
+contract address(SquareVerifier): [0x8cd85d45bef9e69c17c20f26e6cce83c8cdef3354114ff6ae5385b84c222583f](https://rinkeby.etherscan.io/tx/0x8cd85d45bef9e69c17c20f26e6cce83c8cdef3354114ff6ae5385b84c222583f)       
 
 The contract ABIs are located in the corresponding .json files under the folder build/contracts
 

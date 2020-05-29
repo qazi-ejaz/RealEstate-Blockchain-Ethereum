@@ -101,12 +101,15 @@ contract address(SquareVerifier): [0x8cd85d45bef9e69c17c20f26e6cce83c8cdef335411
 # Sell and Purchased property
 **Kingdom Palace Property**:
 contract address 0x5206e78b21ce315ce284fb24cf05e0585a93b1d9
+
 Transaction Hash: [0x6037a433fe0982220f648eb110cfdca72ca1163d1dcc6f9f5f5a03448c2c7496](https://rinkeby.etherscan.io/tx/0x6037a433fe0982220f648eb110cfdca72ca1163d1dcc6f9f5f5a03448c2c7496)
 
 **Beverly Hills Property**:
 contract address 0x5206e78b21ce315ce284fb24cf05e0585a93b1d9
+
 Transaction Hash: [0x3f6d3f93adc49ce59311db8910222f4a6118aa37856f4c9a3ee7086d5e18c692](https://rinkeby.etherscan.io/tx/0x3f6d3f93adc49ce59311db8910222f4a6118aa37856f4c9a3ee7086d5e18c692)
 
+![Storefront](market.png)
 
 The contract ABIs are located in the corresponding .json files under the folder build/contracts
 
